@@ -3,7 +3,7 @@ package com.sherold.humanclasses;
 public class Samurai extends Human {
 	// <----- Attributes ----->
 	// List is needed to count Samurai numbers.
-	public static int numberOfSamurai;
+	private static int numberOfSamurai;
 	
 	// <----- Constructors ----->
 	// Samurai start with 200 health
@@ -25,7 +25,7 @@ public class Samurai extends Human {
 	}
 	
 	// Displays numberOfSamurai
-	public int howMany() {
+	public static int howMany() {
 		return numberOfSamurai;
 	}
 }
