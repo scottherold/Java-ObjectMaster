@@ -33,6 +33,7 @@ public class HumanTest {
 		h1.displayHealth();
 		s1.meditate();
 		s1.displayHealth();
+		System.out.println(s1.howMany());
 	}
 
 }

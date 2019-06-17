@@ -3,11 +3,13 @@ package com.sherold.humanclasses;
 public class Samurai extends Human {
 	// <----- Attributes ----->
 	// List is needed to count Samurai numbers.
+	public static int numberOfSamurai;
 	
 	// <----- Constructors ----->
 	// Samurai start with 200 health
 	public Samurai() {
 		health = 200;
+		numberOfSamurai++;
 	}
 	
 	// <----- Methods ----->
@@ -21,5 +23,9 @@ public class Samurai extends Human {
 	public void meditate() {
 		health += health / 2;
 	}
-
+	
+	// Displays numberOfSamurai
+	public int howMany() {
+		return numberOfSamurai;
+	}
 }
